@@ -1,0 +1,12 @@
+$color-primary : #4B407E;
+$color-light: #9885F7;
+
+$breakpoints: (
+  "tablet-down": 768px,
+);
+
+@mixin media-min($_key) {
+    @media screen and (min-width: map-get($breakpoints, $_key))  {
+      &{ @content; }
+    }
+}

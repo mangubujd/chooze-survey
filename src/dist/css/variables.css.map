@@ -1,0 +1,1 @@
+{"mappings":"","sources":["css/variables.scss"],"sourcesContent":["$color-primary : #4B407E;\n$color-light: #9885F7;\n\n$breakpoints: (\n  \"tablet-down\": 768px,\n);\n\n@mixin media-min($_key) {\n    @media screen and (min-width: map-get($breakpoints, $_key))  {\n      &{ @content; }\n    }\n}"],"names":[],"version":3,"file":"variables.css.map","sourceRoot":"../../"}

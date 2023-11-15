@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Gotham Extra;
+  src: url("../GothamRounded-Medium.6c35d7d5.woff2") format("woff2"), url("../GothamRounded-Medium.3c2f07bf.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gotham Extra;
+  src: url("../Gotham-ExtraLight.7f87d9ea.woff2") format("woff2"), url("../Gotham-ExtraLight.66445e8a.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*# sourceMappingURL=fonts.css.map */
