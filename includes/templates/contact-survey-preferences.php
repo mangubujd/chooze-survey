@@ -13,7 +13,7 @@
                     <option value="mercredi">Mercredi</option>
                     <option value="jeudi">Jeudi</option>
                     <option value="vendredi">Vendredi</option>
-                    <option value="samedi">Samedi</option>
+                    <!--<option value="samedi">Samedi</option>-->
                 </select>
                 <select name="preference-times" id="preference-times" required>
                     <option value="le matin">Matin</option>
