@@ -48,6 +48,7 @@ function display_contact_survey_meta_box($post) {
     $phone = get_post_meta($post->ID, 'phone', true);
     $age = get_post_meta($post->ID, 'age', true);
     $revenue = get_post_meta($post->ID, 'revenue', true);
+    $children = get_post_meta($post->ID, 'children', true);
     $zipcode = get_post_meta($post->ID, 'zipcode', true);
     $validate_sms = get_post_meta($post->ID, 'validate-sms', true);
     $code_sms = get_post_meta($post->ID, 'code-sms', true);
@@ -68,6 +69,10 @@ function display_contact_survey_meta_box($post) {
         <tr>
             <th><label for="phone">Age</label></th>
             <td><?php echo display_value($age); ?></td>
+        </tr>
+        <tr>
+            <th><label for="phone">Children</label></th>
+            <td><?php echo display_value($children); ?></td>
         </tr>
         <tr>
             <th><label for="phone">Revenue</label></th>
@@ -116,6 +121,9 @@ function save_contact_survey_meta($post_id) {
         }
         if (isset($_POST['revenue'])) {
             update_post_meta($post_id, 'revenue', $_POST['revenue']);
+        }
+        if (isset($_POST['chidren'])) {
+            update_post_meta($post_id, 'children', $_POST['children']);
         }
         if (isset($_POST['validate-sms'])) {
             update_post_meta($post_id, 'validate-sms', $_POST['validate-sms'] == true);

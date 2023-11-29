@@ -13,6 +13,7 @@ function handle_contact_validation($request) {
         empty($data['phone']) ||
         empty($data['situation']) ||
         empty($data['age']) ||
+        empty($data['children']) ||
         empty($data['revenue'])
         ) {
         //$errors['message'] = $data;
@@ -234,6 +235,7 @@ function create_contact_entry($data, $isUpdatePostID = false) {
         update_post_meta($contact_id, 'zipcode', $data['zipcode']);
         update_post_meta($contact_id, 'age', $data['age']);
         update_post_meta($contact_id, 'revenue', $data['revenue']);
+        update_post_meta($contact_id, 'children', $data['children']);
         $code = $isUpdatePostID ? get_post_meta($contact_id, 'code-sms', true) : generate_random_sms_code();
         if ( !$isUpdatePostID ) {
             // Mettez à jour le champ "validate-sms" avec la valeur par défaut (false)
